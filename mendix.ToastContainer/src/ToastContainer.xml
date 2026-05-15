@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendix.toastcontainer.ToastContainer" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Toast Container</name>
+    <description>Toast notification container. Place once per page; trigger toasts from nanoflows via window.toast.</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="position" type="enumeration" defaultValue="topRight">
+                <caption>Position</caption>
+                <description>Where toasts appear on screen.</description>
+                <enumerationValues>
+                    <enumerationValue key="topLeft">Top left</enumerationValue>
+                    <enumerationValue key="topCenter">Top center</enumerationValue>
+                    <enumerationValue key="topRight">Top right</enumerationValue>
+                    <enumerationValue key="bottomLeft">Bottom left</enumerationValue>
+                    <enumerationValue key="bottomCenter">Bottom center</enumerationValue>
+                    <enumerationValue key="bottomRight">Bottom right</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="autoClose" type="integer" defaultValue="5000">
+                <caption>Auto close (ms)</caption>
+                <description>How long a toast stays visible before auto-closing. Set 0 to disable auto-close.</description>
+            </property>
+            <property key="hideProgressBar" type="boolean" defaultValue="false">
+                <caption>Hide progress bar</caption>
+                <description></description>
+            </property>
+            <property key="newestOnTop" type="boolean" defaultValue="false">
+                <caption>Newest on top</caption>
+                <description></description>
+            </property>
+            <property key="closeOnClick" type="boolean" defaultValue="true">
+                <caption>Close on click</caption>
+                <description></description>
+            </property>
+            <property key="pauseOnHover" type="boolean" defaultValue="true">
+                <caption>Pause on hover</caption>
+                <description></description>
+            </property>
+            <property key="rtl" type="boolean" defaultValue="false">
+                <caption>RTL</caption>
+                <description>Right-to-left layout.</description>
+            </property>
+            <property key="theme" type="enumeration" defaultValue="light">
+                <caption>Theme</caption>
+                <description></description>
+                <enumerationValues>
+                    <enumerationValue key="light">Light</enumerationValue>
+                    <enumerationValue key="dark">Dark</enumerationValue>
+                    <enumerationValue key="colored">Colored</enumerationValue>
+                </enumerationValues>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

@@ -1,0 +1,30 @@
+{
+  "name": "mendix.toastcontainer",
+  "widgetName": "ToastContainer",
+  "version": "1.0.0",
+  "description": "Toast notification container backed by react-toastify. Exposes window.toast for use from nanoflows / JavaScript actions.",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=16"
+  },
+  "mxpackage": {
+    "name": "ToastContainer",
+    "type": "widget",
+    "mpkName": "mendix.ToastContainer.mpk"
+  },
+  "packagePath": "mendix",
+  "scripts": {
+    "start": "pluggable-widgets-tools start:server",
+    "dev": "pluggable-widgets-tools start:web",
+    "build": "pluggable-widgets-tools build:web",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "release": "pluggable-widgets-tools release:web"
+  },
+  "dependencies": {
+    "react-toastify": "^9.1.3"
+  },
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^11.3.1"
+  }
+}
